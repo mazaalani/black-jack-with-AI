@@ -1,0 +1,65 @@
+.hidden {
+  display: none !important;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.center {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.opacity {
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.loser {
+  opacity: 0.5;
+}
+
+.noClick {
+  pointer-events: none;
+}
+
+@keyframes draw {
+  0% {
+    transform: translate(100px, -300px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.2);
+  }
+  40% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.2);
+  }
+  80% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
